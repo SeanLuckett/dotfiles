@@ -2,13 +2,13 @@ set nocompatible              " be improved, required
 filetype off                  " required
 
 " set the runtime path to include vundle and initialize
-set rtp+=~/.vim/bundle/vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
-if has('python')
 " only installed YouComplete if vim is compiled with python support.
+if has('python')
   Plugin 'Valloric/YouCompleteMe'
 endif
 
@@ -27,6 +27,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'bling/vim-airline'
 Plugin 'marijnh/tern_for_vim'
 Plugin 'Raimondi/delimitMate'
+Plugin 'tpope/vim-rails'
 
 " let vundle manage vundle, required
 

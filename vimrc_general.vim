@@ -28,7 +28,11 @@ set cmdheight=2
 set switchbuf=useopen
 set numberwidth=5
 set showtabline=2
-set winwidth=79
+
+set winwidth=84
+set winheight=5
+set winminheight=5
+set winheight=999
 
 " This makes RVM work inside Vim. I have no idea why.
 set shell=bash
