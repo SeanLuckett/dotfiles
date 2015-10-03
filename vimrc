@@ -1,4 +1,4 @@
-let VIM_DIR=expand("$HOME/.vim")
+let VIM_DIR=expand("$HOME/dotfiles")
 execute "source" VIM_DIR . "/vimrc_plugin.vim"
 execute "source" VIM_DIR . "/vimrc_plugin_settings.vim"
 execute "source" VIM_DIR . "/vimrc_general.vim"
