@@ -3,13 +3,12 @@ let mapleader=","
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MISC KEY MAPS
 " """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap 0 ^
+imap <c-f> <esc>:w<CR>
 map <leader>y "*y
 
 " Insert a hash rocket with <c-l>
 imap <c-l> <space>=><space>
-
-" Can't be bothered to understand ESC vs <c-c> in insert mode
-imap <c-c> <esc>
 
 " Clear the search buffer when hitting return
 function! MapCR()
