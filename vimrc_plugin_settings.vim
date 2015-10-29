@@ -8,9 +8,6 @@ function! BreakLine()
   endif
 endfun
 
-" Remap <Enter> to split the line and insert a new line in between if
-" BreakLine return True
-inoremap <expr> <CR> BreakLine() ? "<CR><ESC>O" : "<CR>"
 
 """"""""""""""""""""
 " Syntastic Settings
@@ -28,5 +25,5 @@ highlight link SyntasticWarning SpellCap
 
 " Remap <Enter> to split the line and insert a new line in between if
 " BreakLine return True
-inoremap <expr> <CR> BreakLine() ? "<CR><ESC>O" : "<CR>"
+" inoremap <expr> <CR> BreakLine() ? "<CR><ESC>O" : "<CR>"
 
