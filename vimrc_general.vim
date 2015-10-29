@@ -17,6 +17,7 @@ set laststatus=2
 set showmatch
 set incsearch
 set hlsearch
+set relativenumber
 set number
 
 " make searches case-sensitive only if they contain upper-case characters

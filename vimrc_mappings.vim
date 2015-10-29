@@ -16,8 +16,6 @@ function! MapCR()
 endfunction
 call MapCR()
 
-nnoremap <leader><leader> <c-^>
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ARROW KEYS ARE UNACCEPTABLE
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -47,3 +45,9 @@ map <leader>n :NERDTreeToggle<CR>
 """""""""""""""""""""
 let g:user_emmet_leader_key='<c-k>'
 
+"""""""""""""""""""""
+" Thoughtbot Rspec  Settings
+"""""""""""""""""""""
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+let g:rspec_command = "Dispatch bundle exec rspec {spec}"
