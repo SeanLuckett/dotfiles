@@ -78,7 +78,8 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if executable('ag')
   " Use Ag over Grep
-  set grepprg=ag\ --nogroup\ --nocolor
+  set grepprg=ag
+  let g:grep_cmd_opts = '--line-numbers --noheading --nogroup'
 
   " Use ag in CtrlP for listing files. Lightning fast and respects
   " .gitignore

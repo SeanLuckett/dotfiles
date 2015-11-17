@@ -51,3 +51,9 @@ let g:user_emmet_leader_key='<c-k>'
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 let g:rspec_command = "Dispatch bundle exec rspec {spec}"
+
+"""""""""""""""""""""
+" Kickass editing maps
+"""""""""""""""""""""
+map <Leader>i mmgg=G`m
+map <Leader>p :set paste<CR>o<esc>"*]p:set nopasted<cr>

@@ -32,6 +32,7 @@ Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-dispatch'
 Plugin 'thoughtbot/vim-rspec'
+Plugin 'skwp/greplace.vim'
 
 " let vundle manage vundle, required
 " all of your plugins must be added before the following line
