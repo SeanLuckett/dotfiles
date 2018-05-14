@@ -3,8 +3,16 @@
 	email = whitecrane007@gmail.com
 [core]
 	editor = vim
+	autocrlf = input
 [push]
 	default = simple
 
 [alias]
   local-branches = !git branch -vv | cut -c 3- | awk '$3 !~/\\[/ { print $1 }'
+	please = push --force-with-lease
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
